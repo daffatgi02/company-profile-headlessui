@@ -2,8 +2,8 @@
 import { programAssets, testimonialAssets } from './assets';
 
 export const schoolInfo = {
-  name: "Universitas Teknologi Nusantara",
-  shortName: "UTN",
+  name: "Universitas ABC",
+  shortName: "ABC",
   tagline: "Membangun Masa Depan Melalui Inovasi dan Teknologi",
   description: "Universitas terdepan yang mengintegrasikan teknologi modern dengan pendidikan berkualitas tinggi untuk menciptakan lulusan yang siap menghadapi tantangan global.",
   established: "1998",
@@ -11,16 +11,16 @@ export const schoolInfo = {
   contact: {
     phone: "+62 21 8888 9999",
     whatsapp: "+62 812 3456 7890",
-    email: "info@utn.ac.id",
-    admissions: "admissions@utn.ac.id",
+    email: "info@abc.ac.id",
+    admissions: "admissions@abc.ac.id",
     address: "Jl. Teknologi No. 123, Jakarta Selatan 12950",
-    website: "https://www.utn.ac.id"
+    website: "https://www.abc.ac.id"
   },
   social: {
-    facebook: "https://facebook.com/utn.official",
+    facebook: "https://facebook.com/abc.official",
     twitter: "https://twitter.com/utn_official",
-    instagram: "https://instagram.com/utn.official",
-    linkedin: "https://linkedin.com/school/utn-jakarta",
+    instagram: "https://instagram.com/abc.official",
+    linkedin: "https://linkedin.com/school/abc-jakarta",
     youtube: "https://youtube.com/@UTNJakarta"
   }
 };
@@ -153,7 +153,7 @@ export const testimonials = [
     company: "Google Singapore",
     year: "Lulusan 2020",
     program: "Teknik Informatika",
-    content: "UTN memberikan pondasi yang sangat kuat dalam teknologi. Kurikulum yang praktis dan dosen yang berpengalaman membuat saya siap menghadapi tantangan di perusahaan teknologi global. Project-based learning membantu saya membangun portfolio yang kuat.",
+    content: "ABC memberikan pondasi yang sangat kuat dalam teknologi. Kurikulum yang praktis dan dosen yang berpengalaman membuat saya siap menghadapi tantangan di perusahaan teknologi global. Project-based learning membantu saya membangun portfolio yang kuat.",
     avatar: testimonialAssets.avatar1,
     rating: 5,
     currentSalary: "IDR 45,000,000/bulan"
@@ -165,7 +165,7 @@ export const testimonials = [
     company: "Tokopedia",
     year: "Lulusan 2019",
     program: "Teknik Informatika",
-    content: "Fasilitas laboratorium yang lengkap dan project-based learning di UTN sangat membantu dalam mengembangkan skill praktis yang dibutuhkan industri. Mentorship dari alumni yang sudah berkarir juga sangat berharga.",
+    content: "Fasilitas laboratorium yang lengkap dan project-based learning di ABC sangat membantu dalam mengembangkan skill praktis yang dibutuhkan industri. Mentorship dari alumni yang sudah berkarir juga sangat berharga.",
     avatar: testimonialAssets.avatar2,
     rating: 5,
     currentSalary: "IDR 35,000,000/bulan"
@@ -177,7 +177,7 @@ export const testimonials = [
     company: "Gojek",
     year: "Lulusan 2021",
     program: "Sistem Informasi",
-    content: "Bukan hanya technical skills, UTN juga mengajarkan soft skills yang sangat penting dalam berkarir. Program magang dan kemitraan industri membantu saya mendapatkan pengalaman kerja bahkan sebelum lulus. Highly recommended!",
+    content: "Bukan hanya technical skills, ABC juga mengajarkan soft skills yang sangat penting dalam berkarir. Program magang dan kemitraan industri membantu saya mendapatkan pengalaman kerja bahkan sebelum lulus. Highly recommended!",
     avatar: testimonialAssets.avatar3,
     rating: 5,
     currentSalary: "IDR 30,000,000/bulan"

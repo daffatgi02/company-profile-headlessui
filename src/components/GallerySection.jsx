@@ -38,7 +38,7 @@ const GallerySection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Jelajahi fasilitas modern dan lengkap yang mendukung proses pembelajaran 
-            dan pengembangan mahasiswa di UTN.
+            dan pengembangan mahasiswa di ABC.
           </p>
         </motion.div>
 

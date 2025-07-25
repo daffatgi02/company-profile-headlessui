@@ -50,7 +50,7 @@ const CTASection = () => {
             Siap Memulai <span className="text-primary-400">Perjalanan</span> Anda?
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Bergabunglah dengan ribuan mahasiswa yang telah memilih UTN sebagai 
+            Bergabunglah dengan ribuan mahasiswa yang telah memilih ABC sebagai 
             langkah awal menuju masa depan yang cerah.
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ const CTASection = () => {
           </div>
           <div className="text-gray-300">
             <h4 className="text-lg font-semibold mb-2 text-white">Email</h4>
-            <p>info@utn.ac.id</p>
+            <p>info@abc.ac.id</p>
           </div>
           <div className="text-gray-300">
             <h4 className="text-lg font-semibold mb-2 text-white">Alamat</h4>
