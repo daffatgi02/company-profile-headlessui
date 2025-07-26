@@ -1,5 +1,5 @@
 // file: src/constants/content.js
-import { programAssets, testimonialAssets } from './assets';
+import { FaCode, FaDatabase, FaBolt, FaLaptopCode, FaChalkboardTeacher, FaBuilding, FaHandshake } from 'react-icons/fa';
 
 export const schoolInfo = {
   name: "Universitas ABC",
@@ -18,60 +18,64 @@ export const schoolInfo = {
   },
   social: {
     facebook: "https://facebook.com/abc.official",
-    twitter: "https://twitter.com/utn_official",
+    twitter: "https://twitter.com/abc_official",
     instagram: "https://instagram.com/abc.official",
     linkedin: "https://linkedin.com/school/abc-jakarta",
-    youtube: "https://youtube.com/@UTNJakarta"
+    youtube: "https://youtube.com/@ABCJakarta"
   }
 };
 
 export const features = [
   {
     id: 1,
-    title: "Kurikulum Terkini",
-    description: "Kurikulum yang selalu diperbarui mengikuti perkembangan industri dan teknologi terbaru dengan standar internasional.",
-    icon: "📚",
+    icon: FaLaptopCode,
+    title: "Kurikulum Berbasis Industri 4.0",
+    description: "Pembelajaran terkini dengan teknologi AI, Machine Learning, Cloud Computing, dan Internet of Things yang sesuai kebutuhan industri global.",
+    gradient: "from-blue-500 to-purple-600",
     details: [
-      "Curriculum berbasis KKNI",
-      "Sertifikasi internasional",
-      "Project-based learning",
-      "Industry 4.0 integration"
+      "Curriculum berbasis KKNI terbaru",
+      "Sertifikasi internasional terintegrasi",
+      "Project-based learning methodology",
+      "Industry 4.0 technology integration"
     ]
   },
   {
     id: 2,
-    title: "Dosen Berkualitas",
-    description: "Didukung oleh dosen-dosen berpengalaman dengan latar belakang akademis dan industri yang solid.",
-    icon: "👨‍🏫",
+    icon: FaChalkboardTeacher,
+    title: "Dosen Expert & Praktisi",
+    description: "Tim pengajar terdiri dari akademisi berpengalaman dan praktisi industri dengan track record di perusahaan global terkemuka.",
+    gradient: "from-green-500 to-teal-600",
     details: [
-      "90% bergelar S2/S3",
+      "95% bergelar S2/S3 dari universitas ternama",
       "Pengalaman industri 10+ tahun",
-      "Publikasi internasional",
-      "Certified professionals"
+      "Publikasi jurnal internasional aktif",
+      "Certified professionals & consultants"
     ]
   },
   {
     id: 3,
-    title: "Fasilitas Modern",
-    description: "Laboratorium dan fasilitas pembelajaran dengan teknologi terdepan untuk mendukung proses belajar mengajar.",
-    icon: "🏢",
+    icon: FaBuilding,
+    title: "Smart Campus & Lab Modern",
+    description: "Fasilitas pembelajaran berstandar internasional dengan teknologi terdepan untuk mendukung riset dan pengembangan inovasi.",
+    gradient: "from-purple-500 to-pink-600",
     details: [
-      "Lab komputer terbaru",
-      "Smart classroom",
-      "Research center",
-      "Co-working space"
+      "Smart classroom dengan IoT integration",
+      "Research center & innovation lab",
+      "High-performance computing facility",
+      "Modern co-working & collaboration space"
     ]
   },
   {
     id: 4,
-    title: "Kemitraan Industri",
-    description: "Kerjasama dengan 200+ perusahaan nasional dan multinasional untuk program magang dan penempatan kerja.",
-    icon: "🤝",
+    icon: FaHandshake,
+    title: "Global Industry Partnership",
+    description: "Kerjasama strategis dengan 200+ perusahaan multinasional dan startup unicorn untuk program magang dan penempatan kerja.",
+    gradient: "from-orange-500 to-red-600",
     details: [
-      "Job guarantee program",
-      "Internship placement",
-      "Industry mentorship",
-      "Career development"
+      "Job guarantee program 95% success rate",
+      "Exclusive internship dengan tech giants",
+      "Industry mentorship & career coaching",
+      "Alumni network di 50+ negara"
     ]
   }
 ];
@@ -79,69 +83,73 @@ export const features = [
 export const programs = [
   {
     id: 1,
+    icon: FaCode,
     title: "Teknik Informatika",
-    description: "Program studi yang fokus pada pengembangan software, artificial intelligence, cybersecurity, dan sistem informasi enterprise.",
-    image: programAssets.teknikInformatika,
+    subtitle: "Computer Science & AI",
+    description: "Program studi yang fokus pada pengembangan software, artificial intelligence, cybersecurity, dan sistem informasi enterprise dengan pendekatan praktis dan industry-ready.",
+    // Direct Unsplash URL dengan parameter optimized
+    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     duration: "4 Tahun (8 Semester)",
     degree: "S1",
     accreditation: "A",
+    students: "2,500+",
+    jobRate: "98%",
+    gradient: "from-blue-500 to-purple-600",
     careerPaths: [
       "Software Engineer",
       "Data Scientist", 
       "AI/ML Engineer",
       "Cybersecurity Specialist",
-      "Full-Stack Developer"
+      "Full-Stack Developer",
+      "DevOps Engineer"
     ],
-    facilities: [
-      "AI & Machine Learning Lab",
-      "Cybersecurity Lab", 
-      "Software Development Studio",
-      "Cloud Computing Lab"
-    ]
+    salary: "Rp 8-25 juta/bulan"
   },
   {
     id: 2,
+    icon: FaDatabase,
     title: "Sistem Informasi",
-    description: "Menggabungkan teknologi informasi dengan manajemen bisnis untuk menciptakan solusi digital yang inovatif.",
-    image: programAssets.sistemInformasi,
+    subtitle: "Business Intelligence & Analytics",
+    description: "Menggabungkan teknologi informasi dengan manajemen bisnis untuk menciptakan solusi digital yang inovatif dan mengoptimalkan proses bisnis enterprise.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     duration: "4 Tahun (8 Semester)",
     degree: "S1",
     accreditation: "A",
+    students: "1,800+",
+    jobRate: "96%",
+    gradient: "from-green-500 to-teal-600",
     careerPaths: [
       "Business Analyst",
       "IT Consultant",
       "System Analyst",
       "Product Manager",
-      "Digital Transformation Specialist"
+      "Digital Transformation Specialist",
+      "Data Analyst"
     ],
-    facilities: [
-      "Business Intelligence Lab",
-      "ERP System Lab",
-      "Digital Marketing Lab",
-      "Startup Incubator"
-    ]
+    salary: "Rp 7-20 juta/bulan"
   },
   {
     id: 3,
+    icon: FaBolt,
     title: "Teknik Elektro",
-    description: "Mempelajari sistem kelistrikan, elektronika, renewable energy, dan teknologi IoT untuk masa depan berkelanjutan.",
-    image: programAssets.teknikElektro,
+    subtitle: "IoT & Renewable Energy",
+    description: "Mempelajari sistem kelistrikan, elektronika, renewable energy, dan teknologi IoT untuk masa depan berkelanjutan dengan fokus pada smart city solutions.",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     duration: "4 Tahun (8 Semester)",
     degree: "S1",
     accreditation: "B+",
+    students: "1,200+",
+    jobRate: "94%",
+    gradient: "from-orange-500 to-red-600",
     careerPaths: [
       "Electrical Engineer",
       "Power Systems Engineer",
-      "IoT Developer",
+      "IoT Solutions Developer",
       "Renewable Energy Specialist",
-      "Automation Engineer"
+      "Automation Engineer",
+      "Smart Grid Engineer"
     ],
-    facilities: [
-      "Power Systems Lab",
-      "Electronics Lab",
-      "IoT & Embedded Systems Lab",
-      "Renewable Energy Lab"
-    ]
+    salary: "Rp 6-18 juta/bulan"
   }
 ];
 
@@ -151,63 +159,62 @@ export const testimonials = [
     name: "Sarah Wijaya",
     role: "Senior Software Engineer",
     company: "Google Singapore",
+    location: "Singapore",
     year: "Lulusan 2020",
     program: "Teknik Informatika",
     content: "ABC memberikan pondasi yang sangat kuat dalam teknologi. Kurikulum yang praktis dan dosen yang berpengalaman membuat saya siap menghadapi tantangan di perusahaan teknologi global. Project-based learning membantu saya membangun portfolio yang kuat.",
-    avatar: testimonialAssets.avatar1,
+    // Optimized avatar URL
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
     rating: 5,
-    currentSalary: "IDR 45,000,000/bulan"
+    currentSalary: "SGD 8,500/month",
+    achievement: "Led 3 major product launches",
+    social: {
+      linkedin: "#",
+      twitter: "#"
+    },
+    companyLogo: "https://logo.clearbit.com/google.com",
+    gradient: "from-blue-500 to-purple-600"
   },
   {
     id: 2,
     name: "Ahmad Rahman",
     role: "Senior Data Scientist",
     company: "Tokopedia",
+    location: "Jakarta, Indonesia",
     year: "Lulusan 2019",
     program: "Teknik Informatika",
-    content: "Fasilitas laboratorium yang lengkap dan project-based learning di ABC sangat membantu dalam mengembangkan skill praktis yang dibutuhkan industri. Mentorship dari alumni yang sudah berkarir juga sangat berharga.",
-    avatar: testimonialAssets.avatar2,
+    content: "Fasilitas laboratorium yang lengkap dan project-based learning di ABC sangat membantu dalam mengembangkan skill praktis yang dibutuhkan industri. Mentorship dari alumni yang sudah berkarir juga sangat berharga dalam membentuk mindset professional.",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
     rating: 5,
-    currentSalary: "IDR 35,000,000/bulan"
+    currentSalary: "IDR 45,000,000/month",
+    achievement: "Published 5 ML research papers",
+    social: {
+      linkedin: "#",
+      instagram: "#"
+    },
+    companyLogo: "https://logo.clearbit.com/tokopedia.com",
+    gradient: "from-green-500 to-teal-600"
   },
   {
     id: 3,
     name: "Maya Sari",
     role: "Product Manager",
     company: "Gojek",
+    location: "Jakarta, Indonesia",
     year: "Lulusan 2021",
     program: "Sistem Informasi",
-    content: "Bukan hanya technical skills, ABC juga mengajarkan soft skills yang sangat penting dalam berkarir. Program magang dan kemitraan industri membantu saya mendapatkan pengalaman kerja bahkan sebelum lulus. Highly recommended!",
-    avatar: testimonialAssets.avatar3,
+    content: "Bukan hanya technical skills, ABC juga mengajarkan soft skills yang sangat penting dalam berkarir. Program magang dan kemitraan industri membantu saya mendapatkan pengalaman kerja bahkan sebelum lulus. Highly recommended untuk yang ingin berkarir di tech!",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
     rating: 5,
-    currentSalary: "IDR 30,000,000/bulan"
-  }
-];
-
-export const achievements = [
-  {
-    id: 1,
-    title: "25+",
-    subtitle: "Tahun Pengalaman",
-    description: "Lebih dari 25 tahun menghasilkan lulusan berkualitas"
-  },
-  {
-    id: 2,
-    title: "15,000+",
-    subtitle: "Alumni Sukses",
-    description: "Alumni yang berkarir di perusahaan terkemuka"
-  },
-  {
-    id: 3,
-    title: "200+",
-    subtitle: "Mitra Industri",
-    description: "Kerjasama dengan perusahaan nasional & multinasional"
-  },
-  {
-    id: 4,
-    title: "95%",
-    subtitle: "Job Placement",
-    description: "Tingkat penempatan kerja dalam 6 bulan setelah lulus"
+    currentSalary: "IDR 38,000,000/month",
+    achievement: "Managed $2M product budget",
+    social: {
+      linkedin: "#",
+      twitter: "#",
+      instagram: "#"
+    },
+    companyLogo: "https://logo.clearbit.com/gojek.com",
+    gradient: "from-pink-500 to-rose-600"
   }
 ];
 
@@ -215,25 +222,46 @@ export const facilities = [
   {
     id: 1,
     name: "Perpustakaan Digital",
-    description: "Koleksi 50,000+ buku digital dan jurnal internasional",
-    image: "/assets/images/gallery/library.jpg"
+    description: "Koleksi 50,000+ buku digital dan jurnal internasional dengan akses 24/7 untuk mahasiswa dan dosen.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Academic"
   },
   {
     id: 2,
-    name: "Laboratorium Komputer",
-    description: "300+ unit komputer dengan spesifikasi terbaru",
-    image: "/assets/images/gallery/computer-lab.jpg"
+    name: "Laboratorium AI & Machine Learning",
+    description: "Fasilitas computing dengan GPU servers untuk research dan pembelajaran artificial intelligence.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Technology"
   },
   {
     id: 3,
-    name: "Auditorium Utama",
-    description: "Kapasitas 1000 orang dengan teknologi audio-visual terkini",
-    image: "/assets/images/gallery/auditorium.jpg"
+    name: "Auditorium Modern",
+    description: "Kapasitas 1000 orang dengan teknologi audio-visual terkini untuk seminar dan acara besar.",
+    image: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Events"
   },
   {
     id: 4,
-    name: "Student Center",
-    description: "Pusat kegiatan mahasiswa dan co-working space",
-    image: "/assets/images/gallery/student-center.jpg"
+    name: "Innovation Hub & Coworking",
+    description: "Ruang kolaborasi modern untuk startup mahasiswa dan project-based learning.",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Innovation"
   }
 ];
+
+// Background images untuk sections
+export const backgroundImages = {
+  hero: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+  about: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+  testimonials: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80"
+};
+
+// Undraw illustrations
+export const illustrations = {
+  education: "https://undraw.co/api/illustrations/education",
+  graduation: "https://undraw.co/api/illustrations/graduation",
+  online_learning: "https://undraw.co/api/illustrations/online_learning",
+  professor: "https://undraw.co/api/illustrations/professor",
+  certificate: "https://undraw.co/api/illustrations/certificate",
+  career_progress: "https://undraw.co/api/illustrations/career_progress"
+};

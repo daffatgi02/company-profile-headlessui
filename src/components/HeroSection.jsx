@@ -9,7 +9,7 @@ import {
   FaChevronDown
 } from 'react-icons/fa';
 import { fadeInUp, fadeInDown, staggerContainer } from '../utils/motionVariants';
-import { schoolInfo } from '../constants/content';
+import { schoolInfo, backgroundImages } from '../constants/content';
 
 const HeroSection = () => {
   const stats = [
@@ -19,11 +19,23 @@ const HeroSection = () => {
     { icon: FaRocket, number: "200+", label: "Mitra Industri" }
   ];
 
+  const scrollToNextSection = () => {
+    const nextSection = document.querySelector('#about-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900">
-      {/* Animated Background Elements */}
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900">
+      {/* Optimized Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+        <img 
+          src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          alt="Campus Background"
+          className="w-full h-full object-cover opacity-10"
+          loading="eager"
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-600/95 via-primary-700/95 to-primary-900/95"></div>
       </div>
 
@@ -69,9 +81,11 @@ const HeroSection = () => {
         className="absolute top-1/3 right-20 w-16 h-16 bg-gradient-to-br from-accent-300 to-accent-500 rounded-lg opacity-25"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Hero Content */}
-        <div className="text-center text-white mb-16">
+      {/* Main Content Container */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        
+        {/* Hero Content */}
+        <div className="text-center text-white mb-3">
           <motion.div
             variants={fadeInDown}
             initial="hidden"
@@ -150,7 +164,7 @@ const HeroSection = () => {
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {stats.map((stat, index) => (
             <motion.div
@@ -167,42 +181,10 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        animate={{
-          y: [0, 10, 0],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 cursor-pointer"
-      >
-        <div className="flex flex-col items-center group">
-          <span className="text-sm mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Scroll untuk melihat lebih</span>
-          <div className="w-8 h-12 border-2 border-white/30 rounded-full flex justify-center group-hover:border-white/50 transition-colors duration-300">
-            <motion.div
-              animate={{
-                y: [0, 8, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="w-1 h-3 bg-white/60 rounded-full mt-2"
-            />
-          </div>
-          <FaChevronDown className="mt-2 animate-bounce" />
-        </div>
-      </motion.div>
-
+    
       {/* Decorative Grid Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3Ccircle cx='27' cy='7' r='1'/%3E%3Ccircle cx='47' cy='7' r='1'/%3E%3Ccircle cx='7' cy='27' r='1'/%3E%3Ccircle cx='27' cy='27' r='1'/%3E%3Ccircle cx='47' cy='27' r='1'/%3E%3Ccircle cx='7' cy='47' r='1'/%3E%3Ccircle cx='27' cy='47' r='1'/%3E%3Ccircle cx='47' cy='47' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute inset-0 bg-pattern-dots"></div>
       </div>
     </section>
   );
