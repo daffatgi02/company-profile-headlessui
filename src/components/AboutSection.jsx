@@ -203,20 +203,6 @@ const AboutSection = () => {
               }}
               className="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-br from-secondary-400 to-secondary-600 rounded-full opacity-70 -z-10"
             />
-
-            {/* Undraw Illustration Overlay */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="absolute -top-12 -right-12 w-48 h-48 hidden lg:block"
-            >
-              <img 
-                src="https://illustration.undraw.co/education.svg" 
-                alt="Education Illustration"
-                className="w-full h-full object-contain"
-              />
-            </motion.div>
           </motion.div>
         </div>
       </div>
