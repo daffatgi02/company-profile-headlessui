@@ -22,26 +22,6 @@ const TestimonialsSection = () => {
 
  const testimonials = [
    {
-     id: 1,
-     name: "Sarah Wijaya",
-     role: "Senior Software Engineer",
-     company: "Google Singapore",
-     location: "Singapore",
-     year: "Lulusan 2020",
-     program: "Teknik Informatika",
-     content: "ABC memberikan pondasi yang sangat kuat dalam teknologi. Kurikulum yang praktis dan dosen yang berpengalaman membuat saya siap menghadapi tantangan di perusahaan teknologi global. Project-based learning membantu saya membangun portfolio yang kuat.",
-     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
-     rating: 5,
-     currentSalary: "SGD 8,500/month",
-     achievement: "Led 3 major product launches",
-     social: {
-       linkedin: "#",
-       twitter: "#"
-     },
-     companyLogo: "https://logo.clearbit.com/google.com",
-     gradient: "from-blue-500 to-purple-600"
-   },
-   {
      id: 2,
      name: "Ahmad Rahman",
      role: "Senior Data Scientist",
